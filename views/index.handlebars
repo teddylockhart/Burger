@@ -1,4 +1,4 @@
-<h1>Burgers!</h1>
+<img src="https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg">
 
 <h2>Burgers that are ready for pick up!</h2>
 
@@ -10,7 +10,7 @@
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">Burgers ready for pick-up!</button>
+          <button type="submit">DEVOUR</button>
         </form>
 
       </li>
@@ -23,7 +23,7 @@
 <ul>
   {{#each burgers}}
     {{#if this.devoured}}
-      <li>
+      <li class="devoured">
         {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
